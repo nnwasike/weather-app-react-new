@@ -8,11 +8,11 @@ export default function CurrentWeather(props) {
     <div className="CurrentWeather">
       <h1 className="text-capitalize">{props.data.city}</h1>
       <div className="row">
-        <div className="col">
+        <div className="col-sm">
           <FormattedDate date={props.data.date} />
           <div className="text-capitalize">{props.data.description}</div>
         </div>
-        <div className="col">
+        <div className="col-sm">
           <ul>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {props.data.wind} mph</li>
@@ -20,8 +20,12 @@ export default function CurrentWeather(props) {
         </div>
       </div>
       <div className="row">
-        <img src={props.data.icon} alt={props.data.description} />
-        <TempConversion fahrenheit={props.data.temperature} />
+        <div className="col-sm-2">
+          <img src={props.data.icon} alt={props.data.description} />
+        </div>
+        <div className="col-sm offset-sm-1">
+          <TempConversion fahrenheit={props.data.temperature} />
+        </div>
       </div>
     </div>
   );

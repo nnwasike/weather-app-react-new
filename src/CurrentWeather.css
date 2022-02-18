@@ -3,3 +3,35 @@
   height: 100px;
   width: 100px;
 }
+
+.CurrentWeather ul {
+  padding-left: 0;
+}
+
+@media (max-width: 575.98px) {
+  .CurrentWeather {
+    font-size: larger;
+    text-align: center;
+  }
+  .CurrentWeather h1 {
+    font-size: 45px;
+  }
+  .CurrentWeather img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 300.98px) {
+  .CurrentWeather {
+    font-size: 17px;
+    text-align: center;
+  }
+  .CurrentWeather h1 {
+    font-size: 40px;
+  }
+  .CurrentWeather img {
+    height: 100px;
+    width: 100px;
+  }
+}

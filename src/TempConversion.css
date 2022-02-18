@@ -12,3 +12,12 @@
 .TempConversion a {
   text-decoration: none;
 }
+
+@media (max-width: 300.98px) {
+  .TempConversion .temp {
+    font-size: 45px;
+  }
+  .TempConversion .tempConversionLinks {
+    font-size: 14px;
+  }
+}

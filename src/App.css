@@ -3,6 +3,7 @@
   border-radius: 8px;
   font-family: sans-serif;
   margin: 30px auto;
+  margin-bottom: 10px;
   max-width: 550px;
   padding: 30px;
 }
@@ -24,4 +25,23 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .App {
+    margin: 20px 20px 0;
+    padding-bottom: 8px;
+  }
+  footer {
+    margin: 10px 0 0 20px;
+  }
+}
+
+@media (max-width: 300.98px) {
+  .App {
+    padding: 17px;
+  }
+  footer {
+    font-size: 12px;
+  }
 }
