@@ -1,0 +1,14 @@
+.TempConversion .temp {
+  font-size: 60px;
+}
+
+.TempConversion .tempConversionLinks {
+  font-size: 17px;
+  margin-left: -5px;
+  position: relative;
+  top: -26px;
+}
+
+.TempConversion a {
+  text-decoration: none;
+}
