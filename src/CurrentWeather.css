@@ -4,10 +4,6 @@
   width: 100px;
 }
 
-.CurrentWeather ul {
-  padding-left: 0;
-}
-
 @media (max-width: 575.98px) {
   .CurrentWeather {
     font-size: larger;
@@ -19,6 +15,9 @@
   .CurrentWeather img {
     height: 120px;
     width: 120px;
+  }
+  .CurrentWeather ul {
+    padding-left: 0;
   }
 }
 
