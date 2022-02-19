@@ -2,22 +2,21 @@ import React, { useState } from "react";
 import "./TempConversion.css";
 
 export default function TempConversion(props) {
-  const [unit, setUnit] = useState(props.fahrenheit);
+  const [unit, setUnit] = useState(`fahrenheit`);
 
   function convertToCelsius(event) {
     event.preventDefault();
-    let celsius = Math.round(((props.fahrenheit - 32) * 5) / 9);
-    setUnit(celsius);
+    setUnit(`celsius`);
   }
   function convertToFahrenheit(event) {
     event.preventDefault();
-    setUnit(props.fahrenheit);
+    setUnit(`fahrenheit`);
   }
 
-  if (unit === props.fahrenheit) {
+  if (unit === `fahrenheit`) {
     return (
       <div className="TempConversion">
-        <span className="temp">{unit}° </span>
+        <span className="temp">{props.fahrenheit}° </span>
         <span className="tempConversionLinks">
           <strong>F</strong> |{" "}
           <a href="/" onClick={convertToCelsius}>
@@ -27,9 +26,10 @@ export default function TempConversion(props) {
       </div>
     );
   } else {
+    let celsius = Math.round(((props.fahrenheit - 32) * 5) / 9);
     return (
       <div className="TempConversion">
-        <span className="temp">{unit}° </span>
+        <span className="temp">{celsius}° </span>
         <span className="tempConversionLinks">
           <strong>C</strong> |{" "}
           <a href="/" onClick={convertToFahrenheit}>
