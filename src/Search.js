@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CurrentWeather from "./CurrentWeather";
+import DailyForecast from "./DailyForecast";
 import "./Search.css";
 
 export default function Search(props) {
@@ -11,6 +12,7 @@ export default function Search(props) {
     //console.log(response.data);
     setWeatherData({
       loaded: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
@@ -55,6 +57,7 @@ export default function Search(props) {
       <div className="Search">
         <div className="row mb-3">{form}</div>
         <CurrentWeather data={weatherData} />
+        <DailyForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

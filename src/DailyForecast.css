@@ -1,0 +1,8 @@
+.DailyForecast {
+  text-align: center;
+}
+
+.DailyForecast .high-temp,
+.low-temp {
+  padding: 0 1px;
+}
