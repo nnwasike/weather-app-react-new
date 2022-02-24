@@ -9,7 +9,6 @@ export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function showWeatherData(response) {
-    //console.log(response.data);
     setWeatherData({
       loaded: true,
       coordinates: response.data.coord,
