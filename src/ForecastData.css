@@ -2,3 +2,9 @@
 .low-temp {
   padding: 0 1px;
 }
+
+.ForecastData icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
