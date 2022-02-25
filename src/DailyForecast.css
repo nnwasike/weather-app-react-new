@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.DailyForecast .high-temp,
-.low-temp {
-  padding: 0 1px;
+.DailyForecast .low-temp {
+  margin-left: 2px;
+  opacity: 0.7;
 }
 
 .DailyForecast .col {

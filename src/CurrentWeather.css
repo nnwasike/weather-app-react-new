@@ -1,11 +1,24 @@
-.CurrentWeather img {
-  padding: 0;
-  height: 100px;
-  width: 100px;
+.CurrentWeather .icon {
+  margin-right: 15px;
 }
 
 .CurrentWeather ul {
   padding-left: 30px;
+}
+
+.CurrentWeather .float {
+  float: left;
+}
+
+.CurrentWeather .temp {
+  font-size: 60px;
+}
+
+.CurrentWeather .fahrenheit {
+  font-size: 17px;
+  margin-left: -5px;
+  position: relative;
+  top: -26px;
 }
 
 @media (max-width: 575.98px) {
@@ -15,10 +28,6 @@
   }
   .CurrentWeather h1 {
     font-size: 45px;
-  }
-  .CurrentWeather img {
-    height: 120px;
-    width: 120px;
   }
   .CurrentWeather ul {
     padding-left: 0;
@@ -32,10 +41,6 @@
   }
   .CurrentWeather h1 {
     font-size: 40px;
-  }
-  .CurrentWeather img {
-    height: 100px;
-    width: 100px;
   }
   .CurrentWeather ul {
     padding-left: 0;

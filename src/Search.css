@@ -4,14 +4,27 @@
   border-radius: 20px;
   border: thin solid;
   background: linear-gradient(
-    110.5deg,
-    rgba(248, 196, 249, 0.66) 22.8%,
-    rgba(253, 122, 4, 0.15) 64.6%
+    57.4deg,
+    rgb(249, 206, 183) 4.6%,
+    rgb(234, 174, 202) 26%,
+    rgb(210, 182, 226) 49.1%,
+    rgb(173, 209, 242) 86.5%
   );
 }
 
 .Search .btn {
   margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.Search .btn:hover {
+  background: linear-gradient(
+    57.4deg,
+    rgb(249, 206, 183) 4.6%,
+    rgb(234, 174, 202) 26%,
+    rgb(210, 182, 226) 49.1%,
+    rgb(173, 209, 242) 86.5%
+  );
 }
 
 @media (max-width: 575.98px) {
