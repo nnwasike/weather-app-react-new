@@ -6,19 +6,22 @@
   padding-left: 30px;
 }
 
+.CurrentWeather .center {
+  text-align: center;
+}
 .CurrentWeather .float {
   float: left;
 }
 
 .CurrentWeather .temp {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .CurrentWeather .fahrenheit {
   font-size: 17px;
-  margin-left: -5px;
+  margin-left: -9px;
   position: relative;
-  top: -26px;
+  top: -23px;
 }
 
 @media (max-width: 575.98px) {
@@ -32,6 +35,9 @@
   .CurrentWeather ul {
     padding-left: 0;
   }
+  .CurrentWeather .float {
+    float: none;
+  }
 }
 
 @media (max-width: 300.98px) {
@@ -44,5 +50,14 @@
   }
   .CurrentWeather ul {
     padding-left: 0;
+  }
+  .CurrentWeather .float {
+    float: none;
+  }
+  .CurrentWeather .temp {
+    font-size: 45px;
+  }
+  .CurrentWeather .fahrenheit {
+    font-size: 14px;
   }
 }

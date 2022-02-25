@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import TempConversion from "./TempConversion";
 import WeatherIcons from "./WeatherIcons";
 import "./CurrentWeather.css";
 
@@ -20,7 +19,7 @@ export default function CurrentWeather(props) {
           </ul>
         </div>
       </div>
-      <div className="row mt-3">
+      <div className="row mt-3 mb-2">
         <div className="col-sm">
           <div className="float icon">
             <WeatherIcons code={props.data.icon} size={70} />
@@ -30,7 +29,6 @@ export default function CurrentWeather(props) {
               <span className="temp">{props.data.temperature} </span>
               <span className="fahrenheit">°F</span>
             </div>
-            <TempConversion fahrenheit={props.data.temperature} />
           </div>
         </div>
       </div>
