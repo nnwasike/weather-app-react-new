@@ -6,15 +6,12 @@
   padding-left: 30px;
 }
 
-.CurrentWeather .center {
-  text-align: center;
-}
 .CurrentWeather .float {
   float: left;
 }
 
 .CurrentWeather .temp {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 .CurrentWeather .fahrenheit {

@@ -20,7 +20,7 @@ export default function CurrentWeather(props) {
         </div>
       </div>
       <div className="row mt-3 mb-2">
-        <div className="col-sm">
+        <div className="col-sm offset-sm-3">
           <div className="float icon">
             <WeatherIcons code={props.data.icon} size={70} />
           </div>
