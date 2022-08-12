@@ -10,7 +10,7 @@ function App() {
       </div>
       <footer>
         <a
-          href="https://github.com/nnwasike/weather-app-react"
+          href="https://github.com/nnwasike/weather-app-react-new"
           target="_blank"
           rel="noreferrer"
         >
